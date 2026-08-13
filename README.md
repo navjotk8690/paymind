@@ -1,3 +1,15 @@
+---
+title: PayMind
+emoji: 💳
+colorFrom: blue
+colorTo: indigo
+sdk: gradio
+app_file: app.py
+pinned: false
+license: gpl-3.0
+short_description: Open-source payment route intelligence
+---
+
 # PayMind
 
 **Open-source payment intelligence for smarter payment-route decisions.**
