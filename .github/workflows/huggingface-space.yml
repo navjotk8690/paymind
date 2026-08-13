@@ -1,0 +1,26 @@
+name: Deploy to Hugging Face Space
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push to Hugging Face Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_USERNAME: navk8690
+        run: |
+          git remote add space https://$HF_USERNAME:$HF_TOKEN@huggingface.co/spaces/$HF_USERNAME/paymind
+          git push space main --force
