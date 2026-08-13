@@ -10,15 +10,20 @@ license: gpl-3.0
 short_description: Open-source payment route intelligence
 ---
 
-🚀 Live Demo
-
-Try PayMind directly in your browser with the interactive Gradio demo:
-
-Launch PayMind on Hugging Face Spaces
-
-The demo uses synthetic/reference data and models to demonstrate PayMind's payment route intelligence workflow. Results do not represent actual payment-provider performance.
-
 # PayMind
+# PayMind
+
+[![Hugging Face Space](https://img.shields.io/badge/Hugging%20Face-Live%20Demo-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/spaces/navk8690/paymind)
+
+Open-source payment route intelligence for smarter route selection.
+
+## 🚀 Live Demo
+
+Try **PayMind** directly in your browser using the interactive Gradio demo hosted on Hugging Face Spaces.
+
+👉 **[Launch PayMind Live Demo](https://huggingface.co/spaces/navk8690/paymind)**
+
+> **Note:** The demo uses synthetic/reference data and reference models to demonstrate PayMind's payment route intelligence workflow. Results do not represent actual payment-provider performance.
 
 **Open-source payment intelligence for smarter payment-route decisions.**
 
