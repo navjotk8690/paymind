@@ -1,0 +1,4 @@
+event_id,timestamp_utc,transaction_type,country,ip_country,jurisdiction,currency,local_currency,amount,app_type,hour,day_of_week,is_weekend,is_cross_border,payment_type
+synthetic-pm-001,2026-08-01T09:15:00Z,deposit,AU,AU,ASIC,AUD,AUD,150.00,MU,9,Friday,0,0,card
+synthetic-pm-002,2026-08-01T14:30:00Z,deposit,SG,SG,MAS,SGD,SGD,480.00,MU,14,Friday,0,0,bank_transfer
+synthetic-pm-003,2026-08-02T11:00:00Z,withdrawal,NZ,NZ,DIA,NZD,NZD,230.00,MU,11,Saturday,1,0,ewallet

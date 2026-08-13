@@ -1,0 +1,6 @@
+ranking:
+  payment_type_probability_weight: 0.25
+  success_probability_weight: 0.40
+  cost_weight: 0.15
+  speed_weight: 0.15
+  position_weight: 0.05

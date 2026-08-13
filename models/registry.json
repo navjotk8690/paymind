@@ -1,0 +1,58 @@
+{
+  "registry_version": "2.0.0",
+  "reference_models_disclaimer": "Reference models are provided for demonstration and development only. Retrain PayMind on your own payment environment before real use.",
+  "models": {
+    "payment_method": {
+      "enabled": true,
+      "display_name": "Candidate Generator",
+      "version": "1.0.0",
+      "mode": "reference",
+      "artifacts": {
+        "model": {
+          "source": "local",
+          "local_path": "models/payment_method/payment_method_v1.cbm"
+        },
+        "metadata": {
+          "source": "local",
+          "local_path": "models/payment_method/metadata.json"
+        }
+      }
+    },
+    "success": {
+      "enabled": true,
+      "display_name": "Reliability Model",
+      "version": "1.0.0",
+      "mode": "reference",
+      "artifacts": {
+        "model": {
+          "source": "local",
+          "local_path": "models/success/success_v1.cbm"
+        },
+        "metadata": {
+          "source": "local",
+          "local_path": "models/success/metadata.json"
+        }
+      }
+    },
+    "arrival": {
+      "enabled": true,
+      "display_name": "Settlement Intelligence",
+      "version": "1.0.0",
+      "mode": "reference",
+      "artifacts": {
+        "p50_model": {
+          "source": "local",
+          "local_path": "models/arrival/arrival_p50_v1.cbm"
+        },
+        "p90_model": {
+          "source": "local",
+          "local_path": "models/arrival/arrival_p90_v1.cbm"
+        },
+        "metadata": {
+          "source": "local",
+          "local_path": "models/arrival/metadata.json"
+        }
+      }
+    }
+  }
+}

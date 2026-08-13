@@ -1,0 +1,16 @@
+{
+  "timestamp_utc": "2026-08-06T06:00:00Z",
+  "transaction_type": "deposit",
+  "currency": "AUD",
+  "amount": 500,
+  "country": "AU",
+  "ip_country": "AU",
+  "app_type": "web_checkout",
+  "available_payment_routes": [
+    "stripe",
+    "paypal",
+    "adyen",
+    "checkout",
+    "worldpay"
+  ]
+}

@@ -1,0 +1,21 @@
+service:
+  name: navcore-paymind
+  version: 0.2.0
+  max_options_per_request: 50
+  max_request_bytes: 262144
+  request_timeout_ms: 1000
+privacy:
+  persist_requests: false
+  persist_responses: false
+  log_request_payloads: false
+  log_response_payloads: false
+  telemetry_enabled: false
+models:
+  provider: baseline  # change to catboost after training
+  payment_type_model_path: models/public/payment_method.cbm
+  success_model_path: models/public/success.cbm
+  arrival_p50_model_path: models/public/arrival_p50.cbm
+  arrival_p90_model_path: models/public/arrival_p90.cbm
+  payment_type_model_version: payment-method-v1
+  success_model_version: success-v1
+  arrival_model_version: arrival-v1

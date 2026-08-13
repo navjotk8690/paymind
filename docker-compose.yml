@@ -1,0 +1,11 @@
+services:
+  paymind:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      PAYMIND_CONFIG_PATH: /app/config/paymind.yaml
+      PAYMIND_RANKING_CONFIG_PATH: /app/config/ranking.yaml
+    read_only: true
+    tmpfs:
+      - /tmp

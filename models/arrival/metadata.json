@@ -1,0 +1,80 @@
+{
+  "name": "paymind-arrival",
+  "version": "1.0.0",
+  "algorithm": "CatBoostRegressor",
+  "objective": "Arrival time quantiles",
+  "trained_at": "2026-08-12T07:36:30.361153+00:00",
+  "target": "arrival_duration_minutes",
+  "units": "minutes",
+  "rows": {
+    "train": 45087,
+    "validation": 14856,
+    "test": 8684
+  },
+  "features": [
+    "transaction_type",
+    "currency",
+    "amount",
+    "log_amount",
+    "amount_bucket",
+    "hour",
+    "day_of_week",
+    "month",
+    "quarter",
+    "is_weekend",
+    "is_cross_border",
+    "payment_code",
+    "payment_type",
+    "banking_hours_indicator"
+  ],
+  "categorical_features": [
+    "transaction_type",
+    "currency",
+    "amount_bucket",
+    "day_of_week",
+    "payment_code",
+    "payment_type"
+  ],
+  "metrics": {
+    "p50_mae_minutes": 106.37532043714637,
+    "p50_rmse_minutes": 727.6390046110852,
+    "p50_coverage": 0.49596959926301243,
+    "p90_mae_minutes": 233.12252308573315,
+    "p90_coverage": 0.8923307231690465,
+    "p90_below_p50_rate": 0.0006909258406264394
+  },
+  "feature_importance": {
+    "p50": {
+      "transaction_type": 11.78581585796096,
+      "currency": 14.164771467967789,
+      "amount": 1.8816861008388972,
+      "log_amount": 3.6470916546027894,
+      "amount_bucket": 11.82850005582771,
+      "hour": 5.529861930056554,
+      "day_of_week": 11.810023179585768,
+      "month": 7.143513887623828,
+      "quarter": 1.0275499261880563,
+      "is_weekend": 4.4191673140295595,
+      "is_cross_border": 0.6619090445068803,
+      "payment_code": 20.325106024622595,
+      "payment_type": 5.38772425677562,
+      "banking_hours_indicator": 0.38727929941295813
+    },
+    "p90": {
+      "transaction_type": 31.12485570491767,
+      "currency": 2.17447431997973,
+      "amount": 2.3513683281853237,
+      "log_amount": 4.1485487113480755,
+      "amount_bucket": 1.3494155160956005,
+      "hour": 5.027198530767782,
+      "day_of_week": 2.213470828625398,
+      "month": 3.3971451839621234,
+      "quarter": 2.972255336655274,
+      "is_weekend": 10.263879411984469,
+      "is_cross_border": 0.912104621633418,
+      "payment_code": 0.9415444112706929,
+      "payment_type": 32.60076327863992,
+      "banking_hours_indicator": 0.5229758159345632
+    }
+  }
+}

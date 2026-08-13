@@ -1,0 +1,68 @@
+{
+  "name": "paymind-success",
+  "version": "1.0.0",
+  "algorithm": "CatBoostClassifier",
+  "objective": "Binary success probability",
+  "trained_at": "2026-08-12T07:36:04.225102+00:00",
+  "dataset": {
+    "train": "data/splits/success/train.csv",
+    "validation": "data/splits/success/validation.csv",
+    "test": "data/splits/success/test.csv"
+  },
+  "rows": {
+    "train": 49264,
+    "validation": 16212,
+    "test": 9524
+  },
+  "success_rates": {
+    "train": 0.9152931146476129,
+    "validation": 0.9164199358499877,
+    "test": 0.9118017639647207
+  },
+  "features": [
+    "transaction_type",
+    "currency",
+    "amount",
+    "log_amount",
+    "amount_bucket",
+    "hour",
+    "day_of_week",
+    "month",
+    "quarter",
+    "is_weekend",
+    "is_cross_border",
+    "payment_code",
+    "payment_type"
+  ],
+  "categorical_features": [
+    "transaction_type",
+    "currency",
+    "amount_bucket",
+    "day_of_week",
+    "payment_code",
+    "payment_type"
+  ],
+  "metrics": {
+    "roc_auc": 0.5909523672435348,
+    "pr_auc": 0.9344255406227127,
+    "log_loss": 0.29465468176894366,
+    "brier_score": 0.0798356472038044,
+    "accuracy": 0.9118017639647207
+  },
+  "feature_importance": {
+    "payment_code": 13.653903037693118,
+    "is_cross_border": 12.177210965813112,
+    "payment_type": 11.350903119274832,
+    "transaction_type": 11.100696879057256,
+    "amount_bucket": 9.079177488692157,
+    "amount": 6.94710088940404,
+    "hour": 6.6749853125717715,
+    "day_of_week": 6.01939906291615,
+    "month": 5.523363666380647,
+    "log_amount": 4.616615142198047,
+    "quarter": 4.399800412154036,
+    "currency": 4.351983391520226,
+    "is_weekend": 4.104860632324679
+  },
+  "threshold": 0.5
+}

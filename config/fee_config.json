@@ -1,0 +1,55 @@
+{
+  "stripe": {
+    "percentage": 1.75,
+    "fixed": 0.30,
+    "fx_percentage": 0.00
+  },
+
+  "paypal": {
+    "percentage": 2.25,
+    "fixed": 0.30,
+    "fx_percentage": 0.10
+  },
+
+  "adyen": {
+    "percentage": 1.60,
+    "fixed": 0.25,
+    "fx_percentage": 0.00
+  },
+
+  "worldpay": {
+    "percentage": 1.80,
+    "fixed": 0.30,
+    "fx_percentage": 0.00
+  },
+
+  "checkout": {
+    "percentage": 1.50,
+    "fixed": 0.30,
+    "fx_percentage": 0.00
+  },
+
+  "square": {
+    "percentage": 1.90,
+    "fixed": 0.25,
+    "fx_percentage": 0.00
+  },
+
+  "wise": {
+    "percentage": 0.90,
+    "fixed": 0.20,
+    "fx_percentage": 0.20
+  },
+
+  "revolut_pay": {
+    "percentage": 1.10,
+    "fixed": 0.20,
+    "fx_percentage": 0.00
+  },
+
+  "bank_transfer": {
+    "percentage": 0.40,
+    "fixed": 0.10,
+    "fx_percentage": 0.00
+  }
+}

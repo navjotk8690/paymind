@@ -1,0 +1,58 @@
+{
+  "name": "paymind-payment-method",
+  "version": "1.0.0",
+  "algorithm": "CatBoostClassifier",
+  "objective": "MultiClass",
+  "trained_at": "2026-08-12T07:35:53.165563+00:00",
+  "training_rows": 49264,
+  "validation_rows": 16212,
+  "test_rows": 9524,
+  "classes": [
+    "adyen",
+    "bank_transfer",
+    "checkout",
+    "paypal",
+    "revolut_pay",
+    "square",
+    "stripe",
+    "wise",
+    "worldpay"
+  ],
+  "features": [
+    "transaction_type",
+    "currency",
+    "amount",
+    "log_amount",
+    "amount_bucket",
+    "hour",
+    "day_of_week",
+    "month",
+    "quarter",
+    "is_weekend",
+    "is_cross_border"
+  ],
+  "categorical_features": [
+    "transaction_type",
+    "currency",
+    "amount_bucket",
+    "day_of_week"
+  ],
+  "metrics": {
+    "top1_accuracy": 0.1977110457790844,
+    "top3_accuracy": 0.5227845443091138,
+    "log_loss": 2.070190715677084
+  },
+  "feature_importance": {
+    "transaction_type": 91.1638857124591,
+    "currency": 1.9022394010483197,
+    "amount": 0.6698387447781727,
+    "log_amount": 0.3829766381220794,
+    "amount_bucket": 2.346149802375086,
+    "hour": 0.5202722189568297,
+    "day_of_week": 1.4763074588245892,
+    "month": 0.5315658415251912,
+    "quarter": 0.6131279729311011,
+    "is_weekend": 0.1473259918303922,
+    "is_cross_border": 0.24631021714913595
+  }
+}

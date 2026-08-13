@@ -1,0 +1,4 @@
+timestamp_utc,transaction_type,currency,amount,hour,day_of_week,is_weekend,is_cross_border,payment_code,payment_type,banking_hours_indicator,arrival_duration_minutes
+2026-08-01T09:15:00Z,deposit,AUD,150.00,9,Friday,0,0,worldpay,card,1,8.5
+2026-08-01T14:30:00Z,deposit,SGD,480.00,14,Friday,0,0,asiabank,bank_transfer,1,22.0
+2026-08-02T11:00:00Z,withdrawal,NZD,230.00,11,Saturday,1,0,neteller,ewallet,0,65.0
